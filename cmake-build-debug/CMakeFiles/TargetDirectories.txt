@@ -1,3 +1,3 @@
-C:/Users/yutto/CLionProjects/C4ML/cmake-build-debug/CMakeFiles/C4ML.dir
-C:/Users/yutto/CLionProjects/C4ML/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/yutto/CLionProjects/C4ML/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/cmake-build-debug/CMakeFiles/C4ML.dir
+C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -65,6 +65,6 @@ private:
     void SetTurn(int New_Turn);
     int  GetTurn();
 public:
-    void play();
+    Connect4 play();
 };
 #endif

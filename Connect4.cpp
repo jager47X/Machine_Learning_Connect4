@@ -14,44 +14,46 @@ Connect4::~Connect4() {
 
 }
 
-void Connect4::play() {
+Connect4 Connect4::play() {
     int input = 0, turn = 1;
+    Connect4 game;
 
     do {
-        if (this->FullBoard() == false) {
+        if (game.FullBoard() == false) {
             do {
                 this->DisplayBoard();
                 std::cout << ("Player 1 Select between 1-7>>");
                 std::cin >> input;
 
-            } while (this->PlayerDrop(input, this->PLAYER1) != true);
+            } while (game.PlayerDrop(input, game.PLAYER1) != true);
 
              std::cout << "Player 1 Selected " << input << std::endl;
-            if (this->WinCheck(this->PLAYER1) == true) {
+            if (game.WinCheck(game.PLAYER1) == true) {
                 std::cout << "\nPlayer 1 won.\n";
-                this->SetWinner(1);
-                this->DisplayBoard();
+                game.SetWinner(1);
+                game.DisplayBoard();
                 break;
             }
         }
 
         if (this->FullBoard() == false) {
             do {
-                this->DisplayBoard();
+                game.DisplayBoard();
                   std::cout << ("Player 2 Select between 1-7>>");
                     std::cin >> input;
-            } while (this->PlayerDrop(input, this->PLAYER2) != true);
+            } while (game.PlayerDrop(input, game.PLAYER2) != true);
 
               std::cout << "Player 2 Selected " << input << std::endl;
-            if (this->WinCheck(this->PLAYER2) == true) {
+            if (game.WinCheck(game.PLAYER2) == true) {
                 std::cout << "\nPlayer 2 won.\n";
-                this->SetWinner(2);
-                this->DisplayBoard();
+                game.SetWinner(2);
+                game.DisplayBoard();
                 break;
             }
         }
 
-    } while (this->FullBoard() == false);
+    } while (game.FullBoard() == false);
+    return game;
 }
 
 bool Connect4::PlayerDrop(int dropChoice, char activePlayer){

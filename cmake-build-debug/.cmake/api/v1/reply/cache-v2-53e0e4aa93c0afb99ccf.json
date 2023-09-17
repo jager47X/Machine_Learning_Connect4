@@ -11,7 +11,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/yutto/CLionProjects/C4ML/cmake-build-debug"
+			"value" : "C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/cmake-build-debug"
 		},
 		{
 			"name" : "C4ML_IS_TOP_LEVEL",
@@ -35,7 +35,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/yutto/CLionProjects/C4ML"
+			"value" : "C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4"
 		},
 		{
 			"name" : "CMAKE_ADDR2LINE",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/yutto/CLionProjects/C4ML/cmake-build-debug"
+			"value" : "c:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -611,7 +611,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/yutto/CLionProjects/C4ML/cmake-build-debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/cmake-build-debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -683,7 +683,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/yutto/CLionProjects/C4ML"
+			"value" : "C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -911,7 +911,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C4ML"
+			"value" : "Machine_learning_Connect4"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1288,6 +1288,42 @@
 			],
 			"type" : "BOOL",
 			"value" : "FALSE"
+		},
+		{
+			"name" : "Machine_learning_Connect4_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/cmake-build-debug"
+		},
+		{
+			"name" : "Machine_learning_Connect4_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "Machine_learning_Connect4_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
