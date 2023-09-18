@@ -5,7 +5,6 @@ int main() {
     FileMangement File;
 
     File.Import_CSV();
-
     Connect4 game;
     // game.play(AI.decition(),AI.decition());
     game=game.play();

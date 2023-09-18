@@ -13,12 +13,17 @@ private:
     Connect4::Tile CopyOfBoard[COLS_SIZE][ROWS_SIZE];
     static int const MAXSIZE= COLS_SIZE * ROWS_SIZE;
     Connect4::Tile CSV[MAXSIZE];
-    std::vector<Connect4::Tile> CopyOfGame;
-    int sortArray[ MAXSIZE];
+  //  std::vector<Connect4::Tile> CopyOfGame;
+    int sortArray[MAXSIZE];
     std::vector<std::vector<std::string> > parsedCsv;
     std::vector<std::string> parsedRow;
-    void BoardToVector(Connect4 &GAME);
+    void BoardToArray(Connect4 &GAME);
     // int Find_Current_CSVline();
+    std::vector<std::string> CountOfGame;
+    std::vector<std::string> WinnerOfGame;
+    std::vector<std::string> ArrayOfOwner;
+    std::vector<std::string> ArrayOfLoc;
+    std::vector<std::string> ArrayOfTurn;
 public:
     void SortByTurn(int colmns,int rows);
     void Output_CSV(Connect4 &game);

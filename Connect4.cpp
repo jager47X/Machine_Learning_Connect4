@@ -65,9 +65,14 @@ bool Connect4::PlayerDrop(int dropChoice, char activePlayer){
         if (dropChoice >=0&&dropChoice<=6) {//0-6
             for (int BOARD_COLUMN = 5; BOARD_COLUMN >=0; BOARD_COLUMN--){
                 if(Board[BOARD_COLUMN][dropChoice].OwnerOfTile==0){
-                    Board[BOARD_COLUMN][dropChoice].ToOwnerOfTile(activePlayer);
+                    Board[BOARD_COLUMN][dropChoice].OwnerOfTile=Board[BOARD_COLUMN][dropChoice].ToOwnerOfTile(activePlayer);
                     Board[BOARD_COLUMN][dropChoice].turnOfTile=turn;
                     Board[BOARD_COLUMN][dropChoice].SetLocation(BOARD_COLUMN,dropChoice);
+                    Board[BOARD_COLUMN][dropChoice].locOfTile=Board[BOARD_COLUMN][dropChoice].GetLocation();
+                    
+                    std::cout<<"OwnerOfTile: "<<Board[BOARD_COLUMN][dropChoice].OwnerOfTile<<"\t";//bad
+                    std::cout<<"turnOfTile "<<Board[BOARD_COLUMN][dropChoice].turnOfTile<<"\t";//ok
+                    std::cout<<"locOfTile "<<Board[BOARD_COLUMN][dropChoice].locOfTile<<"\t";//bad
                     turn++;
                     return true;
                 }
@@ -88,13 +93,24 @@ bool Connect4::PlayerDrop(int dropChoice, char activePlayer){
 void Connect4::DisplayBoard()  {
     for (int BOARD_COLUMN = 0; BOARD_COLUMN <= COLS_SIZE-1; ++BOARD_COLUMN)
     {
+        //std::cout<<BOARD_COLUMN;
         for (int BOARD_ROW = 0; BOARD_ROW <= ROWS_SIZE-1; ++BOARD_ROW)
         {
+            //std::cout<<BOARD_ROW;
             std::cout << ToactivePlayer(Board[BOARD_COLUMN][BOARD_ROW]);
         }std::cout<<std::endl;
     }
-    std::cout << "1234567" << std::endl;
+    //std::cout << "1234567" << std::endl;
 }
+/*
+ *
+ * 11_2_3_4_5_6_7_
+21_2_3_4_5_6_7_
+31_2_3_4_5_6_7_
+41_2_3_4_5_6_7_
+51_2_3_4_5_6_7_
+61_2_3_4_5_6_7_
+ */
 void Connect4::ResetBoard()
 {
 
@@ -207,8 +223,25 @@ void Connect4::SetTile(Tile New_tile,int col, int row)
 {
     Board[col][row] = New_tile;
 }
-Connect4::Tile Connect4::GetTile( int col, int row) {
-    return Board[col][row];
+int Connect4::GetTurnOfTile( int BOARD_COLUMN, int BOARD_ROW) {//triple return
+    Tile CopyOfBoard[COLS_SIZE][ROWS_SIZE];
+    CopyOfBoard[BOARD_COLUMN][BOARD_ROW].turnOfTile=Board[BOARD_COLUMN][BOARD_ROW].turnOfTile;
+    std::cout<<"FileMangement ::BoardToArray turnOfTile: "<<CopyOfBoard[BOARD_COLUMN][BOARD_ROW].turnOfTile;//bad
+    return CopyOfBoard[BOARD_COLUMN][BOARD_ROW].turnOfTile;
+}
+int Connect4::GetOwnerOfTile( int BOARD_COLUMN, int BOARD_ROW) {//triple return
+    Tile CopyOfBoard[COLS_SIZE][ROWS_SIZE];
+    CopyOfBoard[BOARD_COLUMN][BOARD_ROW].OwnerOfTile=Board[BOARD_COLUMN][BOARD_ROW].OwnerOfTile;
+    std::cout<<"FileMangement ::BoardToArray OwnerOfTile "<<CopyOfBoard[BOARD_COLUMN][BOARD_ROW].OwnerOfTile<<"\t";//ok
+
+    return CopyOfBoard[BOARD_COLUMN][BOARD_ROW].OwnerOfTile;
+}
+int Connect4::GetLocOfTile( int BOARD_COLUMN, int BOARD_ROW) {//triple return
+    Tile CopyOfBoard[COLS_SIZE][ROWS_SIZE];
+    CopyOfBoard[BOARD_COLUMN][BOARD_ROW].locOfTile=Board[BOARD_COLUMN][BOARD_ROW].locOfTile;
+    std::cout<<"FileMangement ::BoardToArray locOfTile "<< CopyOfBoard[BOARD_COLUMN][BOARD_ROW].locOfTile<<"\t";//bad
+
+    return CopyOfBoard[BOARD_COLUMN][BOARD_ROW].locOfTile;
 }
 
 void Connect4::SetWinner(int New_Winner) {
@@ -218,10 +251,4 @@ int  Connect4::GetWinner() {
     return this->winner;
 }
 
-void Connect4::SetTurn(int New_Turn) {
-    this->turn = New_Turn;
-}
-int  Connect4::GetTurn() {
-    return this->turn;
-}
 void SetLocation();

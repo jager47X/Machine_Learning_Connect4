@@ -40,19 +40,21 @@ public:
 
         }
 
-        void ToOwnerOfTile(char activePlayer) {
+        int ToOwnerOfTile(char activePlayer) {
             if (activePlayer == PLAYER1)
-                OwnerOfTile = 1;
+               return this->OwnerOfTile = 1;
             if (activePlayer == PLAYER2)
-                OwnerOfTile = 2;
+                return this->OwnerOfTile = 2;
             if (activePlayer == EMPTY)
-                OwnerOfTile = 0;
+                return  this->OwnerOfTile = 0;
         }
         void SetLocation(int colmn,int row) {
+            row++;
+            colmn++;
             std::string strR,strC;
             strR=std::to_string(row);
             strC=std::to_string(colmn);
-            strR=strR+strC;
+            strR=strC+strR;
             this->locOfTile=std::stoi(strR);
         }
         int GetLocation(){
@@ -75,11 +77,12 @@ private:
 
 public:
     void SetTile(Tile New_tile, int col, int row);
-    Tile GetTile(int col, int row);
+
     void SetWinner(int New_Winner);
     int  GetWinner();
-    void SetTurn(int New_Turn);
-    int  GetTurn();
+    int GetTurnOfTile( int BOARD_COLUMN, int BOARD_ROW);
+    int GetOwnerOfTile(int BOARD_COLUMN, int BOARD_ROW);
+    int GetLocOfTile( int BOARD_COLUMN, int BOARD_ROW) ;
 
     Connect4 play();
 };
