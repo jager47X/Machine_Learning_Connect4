@@ -22,10 +22,12 @@ private:
     bool FullBoard();
     char static const PLAYER1 = 'X';
     char static const PLAYER2 = 'O';
+public:
     struct Tile {
         Tile() {
             OwnerOfTile = 0;
             turnOfTile = 0;
+            locOfTile = 0;
         }
 
         char ToactivePlayer() {
@@ -46,25 +48,39 @@ private:
             if (activePlayer == EMPTY)
                 OwnerOfTile = 0;
         }
+        void SetLocation(int colmn,int row) {
+            std::string strR,strC;
+            strR=std::to_string(row);
+            strC=std::to_string(colmn);
+            strR=strR+strC;
+            this->locOfTile=std::stoi(strR);
+        }
+        int GetLocation(){
+            return locOfTile;
+        }
 
-
+        int locOfTile;
         int OwnerOfTile;
         int turnOfTile;
         //int winRatioOfTile;for expansion for more info on board **1
     };
+
+private:
     Tile Board[COLS_SIZE][ROWS_SIZE];
     char static ToactivePlayer(Tile tile);
     friend class ML;
     typedef int defalut;
     int winner = -1;
     int turn = 1;
+
+public:
     void SetTile(Tile New_tile, int col, int row);
-    Tile GetTile( int col, int row);
+    Tile GetTile(int col, int row);
     void SetWinner(int New_Winner);
     int  GetWinner();
     void SetTurn(int New_Turn);
     int  GetTurn();
-public:
+
     Connect4 play();
 };
 #endif

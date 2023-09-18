@@ -21,7 +21,7 @@ Connect4 Connect4::play() {
     do {
         if (game.FullBoard() == false) {
             do {
-                this->DisplayBoard();
+                game.DisplayBoard();
                 std::cout << ("Player 1 Select between 1-7>>");
                 std::cin >> input;
 
@@ -67,6 +67,7 @@ bool Connect4::PlayerDrop(int dropChoice, char activePlayer){
                 if(Board[BOARD_COLUMN][dropChoice].OwnerOfTile==0){
                     Board[BOARD_COLUMN][dropChoice].ToOwnerOfTile(activePlayer);
                     Board[BOARD_COLUMN][dropChoice].turnOfTile=turn;
+                    Board[BOARD_COLUMN][dropChoice].SetLocation(BOARD_COLUMN,dropChoice);
                     turn++;
                     return true;
                 }
@@ -223,3 +224,4 @@ void Connect4::SetTurn(int New_Turn) {
 int  Connect4::GetTurn() {
     return this->turn;
 }
+void SetLocation();
