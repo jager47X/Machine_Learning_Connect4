@@ -12,4 +12,6 @@ add_executable(C4ML main/main.cpp
         File/FileMangement.h
         Machine_Learning/Node.cpp
         Machine_Learning/Node.h
+        Machine_Learning/ML_Agent.h
+        Machine_Learning/ML_Agent.cpp
 )

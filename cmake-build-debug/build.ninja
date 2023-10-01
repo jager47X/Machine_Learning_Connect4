@@ -79,6 +79,18 @@ build CMakeFiles/C4ML.dir/Machine_Learning/Node.cpp.obj: CXX_COMPILER__C4ML_unsc
   OBJECT_DIR = CMakeFiles\C4ML.dir
   OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\Machine_Learning
 
+build CMakeFiles/C4ML.dir/Machine_Learning/ML_Agent.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/Machine_Learning/ML_Agent.cpp || cmake_object_order_depends_target_C4ML
+  DEP_FILE = CMakeFiles\C4ML.dir\Machine_Learning\ML_Agent.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C4ML.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\Machine_Learning
+
+build CMakeFiles/C4ML.dir/Machine_Learning/Test.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/Machine_Learning/Test.cpp || cmake_object_order_depends_target_C4ML
+  DEP_FILE = CMakeFiles\C4ML.dir\Machine_Learning\Test.cpp.obj.d
+  FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\C4ML.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\Machine_Learning
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target C4ML
@@ -87,7 +99,7 @@ build CMakeFiles/C4ML.dir/Machine_Learning/Node.cpp.obj: CXX_COMPILER__C4ML_unsc
 #############################################
 # Link the executable C4ML.exe
 
-build C4ML.exe: CXX_EXECUTABLE_LINKER__C4ML_Debug CMakeFiles/C4ML.dir/main/main.cpp.obj CMakeFiles/C4ML.dir/Connect4/Connect4.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/DecisionTree.cpp.obj CMakeFiles/C4ML.dir/File/FileMangement.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/Node.cpp.obj
+build C4ML.exe: CXX_EXECUTABLE_LINKER__C4ML_Debug CMakeFiles/C4ML.dir/main/main.cpp.obj CMakeFiles/C4ML.dir/Connect4/Connect4.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/DecisionTree.cpp.obj CMakeFiles/C4ML.dir/File/FileMangement.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/Node.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/ML_Agent.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/Test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C4ML.dir

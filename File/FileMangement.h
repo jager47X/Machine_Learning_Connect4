@@ -24,7 +24,7 @@ private:
     void BoardToArray(Connect4 &GAME);
 public:
 
-    void Output_CSV(Connect4 &game);
+    void Output_CSV(Connect4 &game);//half done 9/30
     void Import_CSV(); //9/30//23 completed
 
 };
