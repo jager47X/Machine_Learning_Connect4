@@ -49,35 +49,35 @@ cmake_ninja_workdir = C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning
 
 build cmake_object_order_depends_target_C4ML: phony || CMakeFiles/C4ML.dir
 
-build CMakeFiles/C4ML.dir/main.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/main.cpp || cmake_object_order_depends_target_C4ML
-  DEP_FILE = CMakeFiles\C4ML.dir\main.cpp.obj.d
+build CMakeFiles/C4ML.dir/main/main.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/main/main.cpp || cmake_object_order_depends_target_C4ML
+  DEP_FILE = CMakeFiles\C4ML.dir\main\main.cpp.obj.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\C4ML.dir
-  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\main
 
-build CMakeFiles/C4ML.dir/Connect4.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/Connect4.cpp || cmake_object_order_depends_target_C4ML
-  DEP_FILE = CMakeFiles\C4ML.dir\Connect4.cpp.obj.d
+build CMakeFiles/C4ML.dir/Connect4/Connect4.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/Connect4/Connect4.cpp || cmake_object_order_depends_target_C4ML
+  DEP_FILE = CMakeFiles\C4ML.dir\Connect4\Connect4.cpp.obj.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\C4ML.dir
-  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\Connect4
 
-build CMakeFiles/C4ML.dir/DecisionTree.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/DecisionTree.cpp || cmake_object_order_depends_target_C4ML
-  DEP_FILE = CMakeFiles\C4ML.dir\DecisionTree.cpp.obj.d
+build CMakeFiles/C4ML.dir/Machine_Learning/DecisionTree.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/Machine_Learning/DecisionTree.cpp || cmake_object_order_depends_target_C4ML
+  DEP_FILE = CMakeFiles\C4ML.dir\Machine_Learning\DecisionTree.cpp.obj.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\C4ML.dir
-  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\Machine_Learning
 
-build CMakeFiles/C4ML.dir/FileMangement.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/FileMangement.cpp || cmake_object_order_depends_target_C4ML
-  DEP_FILE = CMakeFiles\C4ML.dir\FileMangement.cpp.obj.d
+build CMakeFiles/C4ML.dir/File/FileMangement.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/File/FileMangement.cpp || cmake_object_order_depends_target_C4ML
+  DEP_FILE = CMakeFiles\C4ML.dir\File\FileMangement.cpp.obj.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\C4ML.dir
-  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\File
 
-build CMakeFiles/C4ML.dir/Node.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/Node.cpp || cmake_object_order_depends_target_C4ML
-  DEP_FILE = CMakeFiles\C4ML.dir\Node.cpp.obj.d
+build CMakeFiles/C4ML.dir/Machine_Learning/Node.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/Users/yutto/OneDrive/Documents/GitHub/Machine_Learning_Connect4/Machine_Learning/Node.cpp || cmake_object_order_depends_target_C4ML
+  DEP_FILE = CMakeFiles\C4ML.dir\Machine_Learning\Node.cpp.obj.d
   FLAGS = -g -std=gnu++2a -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\C4ML.dir
-  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir
+  OBJECT_FILE_DIR = CMakeFiles\C4ML.dir\Machine_Learning
 
 
 # =============================================================================
@@ -87,7 +87,7 @@ build CMakeFiles/C4ML.dir/Node.cpp.obj: CXX_COMPILER__C4ML_unscanned_Debug C$:/U
 #############################################
 # Link the executable C4ML.exe
 
-build C4ML.exe: CXX_EXECUTABLE_LINKER__C4ML_Debug CMakeFiles/C4ML.dir/main.cpp.obj CMakeFiles/C4ML.dir/Connect4.cpp.obj CMakeFiles/C4ML.dir/DecisionTree.cpp.obj CMakeFiles/C4ML.dir/FileMangement.cpp.obj CMakeFiles/C4ML.dir/Node.cpp.obj
+build C4ML.exe: CXX_EXECUTABLE_LINKER__C4ML_Debug CMakeFiles/C4ML.dir/main/main.cpp.obj CMakeFiles/C4ML.dir/Connect4/Connect4.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/DecisionTree.cpp.obj CMakeFiles/C4ML.dir/File/FileMangement.cpp.obj CMakeFiles/C4ML.dir/Machine_Learning/Node.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\C4ML.dir

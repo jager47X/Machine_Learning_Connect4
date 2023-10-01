@@ -3,13 +3,13 @@ project(Machine_learning_Connect4)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(C4ML main.cpp
-        Connect4.cpp
-        Connect4.h
-        DecisionTree.cpp
-        DecisionTree.h
-        FileMangement.cpp
-        FileMangement.h
-        Node.cpp
-        Node.h
+add_executable(C4ML main/main.cpp
+        Connect4/Connect4.cpp
+        Connect4/Connect4.h
+        Machine_Learning/DecisionTree.cpp
+        Machine_Learning/DecisionTree.h
+        File/FileMangement.cpp
+        File/FileMangement.h
+        Machine_Learning/Node.cpp
+        Machine_Learning/Node.h
 )

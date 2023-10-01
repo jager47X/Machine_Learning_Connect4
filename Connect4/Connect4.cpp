@@ -251,4 +251,5 @@ int  Connect4::GetWinner() {
     return this->winner;
 }
 
+
 void SetLocation();
